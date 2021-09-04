@@ -1,0 +1,7 @@
+{{#each this.nextModels as |nm|}}
+    <LinkTo @route="item" @model={{nm}} @query={{hash direction="asc"}}>
+      Go to model {{nm.item_id}}
+    </LinkTo>
+    <br>
+{{/each}}
+{{outlet}}
